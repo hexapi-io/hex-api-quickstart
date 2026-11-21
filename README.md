@@ -1,8 +1,10 @@
-![HEX API Quickstart](cover.png)
+![HEX Uncensored AI API quickstart](cover.png)
 
-# HEX API Quickstart
+# HEX Uncensored AI API Quickstart
 
-Send your first chat completion to HEX using the OpenAI-compatible API. The samples use a prepaid HEX balance and read your key from the `HEX_API_KEY` environment variable.
+Connect your app to the HEX Uncensored AI API. Start with an OpenAI-compatible chat request to GLM 5.3 Abliterated using curl, Python, or Node.js. The examples use a prepaid HEX balance and read your key from the `HEX_API_KEY` environment variable.
+
+[Get started with HEX](https://hexapi.io/openai-compatible-api) · [Browse the model catalog](https://github.com/hexapi-io/hex-model-catalog) · [Set up OpenCode Desktop](https://github.com/hexapi-io/hex-opencode-setup)
 
 ## Find a model
 
@@ -25,6 +27,13 @@ curl --fail-with-body https://api.hexapi.io/v1/chat/completions \
 The reply text is in `choices[0].message.content`. To use an OpenAI-compatible client, set its base URL to `https://api.hexapi.io/v1` and select an ID returned by the model list.
 
 Run the [Python example](chat.py) with `python chat.py` or the [Node.js example](chat.mjs) with `node chat.mjs` using Node.js 22 or later. Pass a model ID as the first argument to select a different model. Each run submits a billable request.
+
+## Choose a model for your workflow
+
+| Model guide | Try this first |
+| --- | --- |
+| [GLM 5.3 Abliterated API](https://github.com/hexapi-io/glm-5.3-abliterated) | Turn a bug report into a structured JSON ticket. |
+| [DeepSeek V4 Pro Uncensored API](https://github.com/hexapi-io/deepseek-v4-pro-uncensored) | Stream a release checklist into a Node.js terminal. |
 
 ## If a request fails
 
