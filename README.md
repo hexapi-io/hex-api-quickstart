@@ -40,3 +40,15 @@ Run the [Python example](chat.py) with `python chat.py` or the [Node.js example]
 Check that the key belongs to the HEX account you intend to use, confirm the account has an available balance, and copy the model ID from the catalog. For a persistent server error, check the status page and include the time and request ID when contacting HEX support.
 
 [API reference](https://hexapi.io/docs) · [Models](https://hexapi.io/models) · [Pricing](https://hexapi.io/pricing) · [Status](https://hexapi.io/status) · [Support](https://hexapi.io/support)
+
+
+## Discover image and video operations
+
+Use the media catalog to see the models, operation schemas and prices available to your account. Review the quote before starting a media job.
+
+```bash
+curl --fail-with-body https://api.hexapi.io/v1/media/catalog \
+  -H "Authorization: Bearer $HEX_API_KEY"
+```
+
+[See media examples](https://hexapi.io/#media-creation) · [Open Showroom](https://hexapi.io/app/chat?showroom=1)
